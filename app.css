@@ -1,0 +1,542 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+   min-width: 320px;
+   font-family: 'Montserrat',sans-serif;
+}
+.header-img{
+   
+    background: url('https://cdn.pixabay.com/photo/2016/10/12/13/32/office-1734485_960_720.jpg') no-repeat center center / cover;
+    height: 100vh;
+}
+.bacc{
+    background: rgba(0,0,0,0.4);
+    height: 100vh;
+}
+nav{
+    width: 100%;
+    height: 80px;
+    
+}
+
+.logo{
+    color: #1b9bff;
+    font-size: 35px;
+    line-height: 80px;
+    font-weight: bold;
+    /* padding: 0 100px; */
+}
+ul{
+    float: right;
+    margin-right: 20px;
+}
+ul li{
+    display: inline-block;
+    margin: 0 5px;
+    line-height: 80px;
+}
+ul li a{
+    color: #1b9bff;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+}
+a:hover{
+    background: #1b9bff;
+    transition: 0.5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #1b9bff;
+    float: right;
+    margin-right: 40px;
+    line-height: 80px;
+    cursor: pointer;
+
+}
+.tugma{
+    display: none;
+}
+.checkbtn{
+    display: none;
+}
+
+@media (max-width: 1200px){
+    .logo {
+      /* padding-left: 28px; */
+      font-size: 25px;
+    }
+
+    ul li a{
+      font-size: 20px; 
+      padding: 0 5px; 
+    }
+   
+
+}
+
+@media (max-width: 992px){
+    .logo {
+      
+      font-size: 20px;
+    }
+
+    ul li a{
+      font-size: 15px; 
+      padding: 0 3px; 
+    }
+    .text2, .button1{
+        text-align: center;
+    }
+   
+
+}
+@media (max-width:768px){
+    .checkbtn{
+        display: block;
+    }
+    
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        text-align: center;
+        left: -100%;
+        transition: all 0.5s ease;
+        background: #1b9bff;
+    }
+    ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    ul li a{
+        font-size: 20px;
+        color: #fff;
+    }
+    a:hover{
+        background: none;
+        color: blue;
+    }
+    #tugma1:checked ~ul{
+        left: 0;    
+    }
+    /* ============================= */
+    .text2, .button1{
+        text-align: center;
+    }
+   
+    
+   
+}
+/*=================== Header nav end ======== */
+
+
+/* =================Header main Start======== */
+.text1{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+.text1 .text2{
+    margin: 50px 0;
+}
+.text1 .text2 h1{
+    font-size: 40px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    margin: 20px 0;
+    color: #1b9bff;
+}
+.text1 .text2 p{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Montserrat';
+}
+.text1 .button1 .btn{
+    outline: none;
+    border-radius: 0;
+    padding: 10px 40px;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    background: #1b9bff
+    
+}
+/* ==========Information============== */
+.about h3{
+    text-align: center;
+    color: black;
+    font-size: 32px;
+    font-weight: 500;
+    font-family: 'Montserrat',sans-serif;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+.about .info{
+    color: grey;
+    font-family: 'Montserrat',sans-serif;
+    text-align: center;
+    font-size: 20px;
+    margin: 10px 0;
+
+}
+.about img{
+    max-width: 100%;
+    height: auto;
+    color: black;
+    margin-top: 40px;
+}
+/* =======Section Info end====== */
+
+/* =======Section Persentage====== */
+
+.per .row{
+    background: rgba(218, 212, 212, 0.849);
+}
+.per h2{
+    color: black;
+    font-size: 25px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    font-family: 'Montserrat',sans-serif;
+    text-align: center;
+}
+.per1 p{
+    margin-top: 20px;
+}
+.per1 .foiz75{
+    width: 100%;
+    height: 3px;
+    background: gray;
+
+}
+.per1 .last{
+    margin-bottom: 50px;
+}
+.per1 .foiz76{
+    width: 75%;
+    height: 3px;
+    background: green;
+}
+.per1 .foiz90{
+    width: 90%;
+    height: 3px;
+    background: green;
+}
+.per1 .foiz65{
+    width: 65%;
+    height: 3px;
+    background: green;
+}
+.per1{
+    max-width: 100%;
+}
+.per .img2{
+    padding: 0;
+
+}
+.per .img2 img{
+    max-width: 100%;
+    height: auto;
+}
+/* ============Section Portfolio====== */
+.port{
+    min-height: 150px;
+    background: green;
+}
+.port .boxx{
+   max-width: 100%;
+   height: 150px;
+}
+.port .boxx .fa{
+    font-size: 30px;
+    color: #fff;
+    transition: 500ms;
+}
+.port .boxx p{
+    color: #fff;
+    font-size: 16px;
+    padding: 3px 0;
+    font-weight: 500;
+    margin: 0;
+    transition: 1.5s;
+    
+}
+.port .boxx h5{
+    margin: 0;
+    color: white;
+    font-size: 16px;
+    padding: 3px 0;
+    font-weight: 500;
+    transition: 1s;
+}
+.port .boxx{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+   
+}
+
+.boxx:hover .fa{
+color: red;
+}
+.boxx:hover p{
+    color: red;
+}
+.boxx:hover h5{
+    color: red;
+}
+/* =============Section Contents===== */
+.contents1{
+    padding: 0;
+}
+.contents1 .box-img{
+    margin-left: 0;
+    margin-right: 0;
+}
+.contents1 .imgg{
+    padding: 0;
+    position: relative;
+}
+.ey{
+    position: absolute;
+    left: 43%;
+    top: 43%;
+    opacity: 0;
+    transition: 1s;
+}
+.ey i{
+    font-size: 50px;
+    color: white;
+    
+}
+.imgg img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+/* -----====Section contents :hover=========------- */
+.box-img .imgg::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    transform: scale(0);
+    transition: 1s;
+
+}
+.box-img .imgg:hover::after{
+    transform: scale(1);
+}
+.box-img .imgg:hover .ey{
+    opacity: 1;
+}
+
+/* ============Section Leader====== */
+.load{
+    width: 100%;
+    height: 100px;
+    background: green;
+    padding: 0;
+
+}
+.load .row{
+    margin-left: 0;
+    margin-right: 0;
+}
+.boxxx{
+    width: 100%;
+    height: 100px;
+}
+.load .lead .boxxx h4{
+   text-align: center;
+   color: #fff;
+   font-size: 18px;
+   text-transform: uppercase;
+   margin: 0;
+}
+/* =====Section Process====== */
+
+.vedeoo .text3{
+    text-align: center;
+}
+.vedeoo .text3 h4{
+    text-align: center;
+    color: black;
+    font-size: 32px;
+    font-weight: 500;
+    font-family: 'Montserrat',sans-serif;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+.vedeoo .text3 p{
+    color: grey;
+    font-family: 'Montserrat',sans-serif;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+
+} 
+.vedeoo .vedeo{
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* ======= section icons========= */
+.iconss{
+    text-align: center;
+}
+.iconss span i{
+
+    font-size: 30px;
+    font-weight: 400;
+    color: gray;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.iconss h3{
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    text-transform: uppercase;
+}
+.iconss p{
+    color: gray;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 20px;
+
+}
+.iconsss{
+    background: rgba(218, 212, 212, 0.849);
+    margin-top: 20px;
+   
+}
+/* ====Section Slayder====== */
+.slayderx{
+    background: rgba(218, 212, 212, 0.849);
+    
+}
+.slayd0 .carusel{
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+.slayd0 .carusel .button1{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background: transparent;
+    border: none;
+}
+.slayd0 .carusel .button2{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background: transparent;
+    border: none;
+}
+.slayderx .slayd0 .carusel .fa{
+    font-size: 30px;
+    color: #1b9bff;
+}
+.slayd0 .slayd{
+    width: 100%;
+    height: auto;
+}
+.slayd0 .texts{
+    position: absolute;
+    top: 35%;
+    right: 10%;
+    left: 10%;
+    color: white;
+
+}
+.ppp{
+    width: 50%;
+}
+/* section logo */
+.iconsssx{
+    background: rgba(218, 212, 212, 0.849);
+  padding: 50px 0;
+}
+
+.iconsssx .fa{
+    font-size: 50px;
+    transition: 0.5s;
+}
+.iconsssx .fa:hover{
+    color: red;
+}
+/* section form==== */
+.form1 .texthp{
+    text-align: center;
+}
+.form1 .texthp h3{
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+    margin: 20px 0;
+}
+.form1 .texthp p{
+    color: gray;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.x{
+    margin-right: 17px;
+    margin-bottom: 25px;
+}
+.form1 .form3 .title{
+    margin-bottom: 25px;
+} 
+.form1 .form2 .fif{
+    width: 48%;
+    border: none;
+    /* border: none; */
+    
+}
+.form1 .form2 .title{
+    width: 100%;
+    border: none;
+
+}
+.form1 .form2.form3{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.form1 textarea{
+    width: 100%;
+    background: #fff;
+    border: none;
+}
+.form1 .btn{
+    border-radius: 0;
+    margin-top: 15px;
+    text-align: center;
+    margin-bottom: 25px;
+    border: none;
+}
+.btnn{
+    background: rgba(218, 212, 212, 0.849);
+}
